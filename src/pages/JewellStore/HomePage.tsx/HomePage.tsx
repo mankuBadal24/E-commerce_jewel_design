@@ -4,9 +4,7 @@ export const HomePage = () => {
     return (
         <>
             <NavbarDemo />
-            <div>
-                HomePage
-            </div>
+            
         </>
     )
 }
