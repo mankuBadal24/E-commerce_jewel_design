@@ -1,6 +1,9 @@
+import { NavbarDemo } from "../Navabar/Navbar"
 
 export const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+        <NavbarDemo/>
+        HomePage</div>
   )
 }
