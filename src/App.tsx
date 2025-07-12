@@ -18,6 +18,7 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
+import { HomePage } from "./pages/JewellStore/HomePage.tsx/HomePage";
 
 
 
@@ -28,9 +29,11 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <Routes>
+          {/* Store Page */}
+          <Route path="/" element={<HomePage/>} />
           {/* Dashboard Layout */}
           <Route element={<AppLayout />}>
-            <Route index path="/" element={<Home />} />
+            <Route index path="/dash" element={<Home />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
